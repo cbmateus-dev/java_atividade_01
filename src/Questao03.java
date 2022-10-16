@@ -4,9 +4,7 @@ public class Questao03 {
         Scanner ler = new Scanner(System.in);
         System.out.println("Digite um Nome: ");
         String name = ler.next();       
-
-
-        System.out.println("Olá " + name);
+        System.out.println("Olá "+name);
         
         ler.close();
     }

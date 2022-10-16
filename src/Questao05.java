@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.text.DecimalFormat;
 public class Questao05 {
     public static void main(String[] args) {
         
@@ -7,10 +7,15 @@ public class Questao05 {
 
         System.out.println("Digite o valor do jantar: ");
         double vlrJantar = ler.nextDouble();
+
         System.out.println("A Taxa de Serviços do Garçom é 10%");
-        double taxaGarçom = 10.0/100.0;
+        double taxaGarçom = 10.00/100.00;
+
         double vlrTotal = vlrJantar+(taxaGarçom * vlrJantar);
-        System.out.println("Valor do jantar com taxa do garçom é R$ " + vlrTotal);
+
+        DecimalFormat vlrFormatado = new DecimalFormat("#.00");
+        System.out.println("O Valor do Jantar é com a taxa de Serviços é R$ " + vlrFormatado.format(vlrTotal));
+               
                  
         ler.close();
     }

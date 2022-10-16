@@ -17,6 +17,7 @@ public class Questao01 {
          else{
             System.out.println("Reprovado, média final " + mediaNota);
          }
+         ler.close();
 
       
     }
